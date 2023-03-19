@@ -71,7 +71,7 @@ history=model.fit(
     validation_data=valid_gen, validation_steps=50
 )
 
-save_model(model, 'gender_detection.h5')
+save_model(model, 'model-gender.h5')
 model.save_weights('my_model_weights.h5')
 
 acc = history.history['acc']
